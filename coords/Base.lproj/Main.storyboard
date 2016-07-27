@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qeS-Ih-3gt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="77C-Hi-BN2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -60,12 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWu-YH-dGK">
-                                <rect key="frame" x="117" y="211" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xD-6x-Xno">
-                                <rect key="frame" x="117" y="271" width="97" height="30"/>
+                                <rect key="frame" x="44" y="169" width="286" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -80,9 +75,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsU-hu-WdL">
-                                <rect key="frame" x="142" y="463" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="150" y="463" width="30" height="30"/>
+                                <state key="normal" title="확인"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xD-6x-Xno">
+                                <rect key="frame" x="44" y="234" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSf-px-VpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284.5" y="1276.5"/>
+            <point key="canvasLocation" x="920.5" y="1282.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GgF-6G-TYa">
@@ -182,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvJ-Gu-CV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1837.5" y="2183.5"/>
+            <point key="canvasLocation" x="1849.5" y="2178.5"/>
         </scene>
         <!--Camera-->
         <scene sceneID="fqW-rn-Su9">
@@ -221,7 +221,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardTableView" rowHeight="462" id="tka-SL-PSy" customClass="CardTableViewCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="462"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="462"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tka-SL-PSy" id="r70-XS-KhD">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="461"/>
@@ -304,12 +304,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJz-UT-K75" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2304.5" y="1254.5"/>
+            <point key="canvasLocation" x="2471.5" y="1231.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Feeds-->
         <scene sceneID="x5b-JZ-cof">
             <objects>
                 <tabBarController id="qeS-Ih-3gt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Feeds" id="Gbc-Wx-6qq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="9Sd-Kn-BjY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -326,7 +327,24 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gO-w8-Rl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825.5" y="1250.5"/>
+            <point key="canvasLocation" x="2008.5" y="1231.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jh2-sB-5zY">
+            <objects>
+                <navigationController id="77C-Hi-BN2" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rNb-Hc-8Ph">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qeS-Ih-3gt" kind="relationship" relationship="rootViewController" id="Ek7-zp-drw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bua-5R-My6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1585.5" y="1231.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vcc-Ud-SZz">

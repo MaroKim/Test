@@ -21,5 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIView *cardView;
 
 - (IBAction)cardLikeBtnAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *replyIDLabel;
+@property (weak, nonatomic) IBOutlet UILabel *replyTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *replyIDLabel2;
+@property (weak, nonatomic) IBOutlet UILabel *replyTextLabel2;
 
 @end

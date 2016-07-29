@@ -11,13 +11,13 @@
 @interface FeedViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
     
     NSURLSessionTask *cardImgDownloadTask;
+    NSURLSessionTask *cardprofileImgDownloadTask;
     
     NSURL *cardRequestUrl;
     NSDictionary *cardList;
     NSArray *cardContents;
-    
-    
 }
+
 
 
 @end

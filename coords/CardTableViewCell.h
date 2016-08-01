@@ -22,6 +22,10 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *profileImgActivityIndicator;
 
+@property (weak, nonatomic) IBOutlet UILabel *replyIDLabel;
+@property (weak, nonatomic) IBOutlet UILabel *replyContentsLabel;
+
+@property (weak, nonatomic) IBOutlet UIView *replyView;
 
 
 - (IBAction)cardLikeBtnAction:(id)sender;

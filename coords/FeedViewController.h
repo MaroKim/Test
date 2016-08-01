@@ -15,9 +15,11 @@
     
     NSURL *cardRequestUrl;
     NSDictionary *cardList;
-    NSArray *cardContents;
+    NSMutableArray *cardContents;
+    NSDictionary *testCard;
+    NSMutableArray *commentsArray;
+    
+    
 }
-
-
 
 @end

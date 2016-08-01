@@ -224,7 +224,7 @@
                                         <rect key="frame" x="0.0" y="92" width="383" height="576"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tka-SL-PSy" id="r70-XS-KhD">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="575.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="575"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-TE-1Sg">
@@ -265,6 +265,18 @@
                                                                     <rect key="frame" x="48" y="13" width="38" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="replyID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-wh-rBg">
+                                                                    <rect key="frame" x="13" y="49" width="54" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reply Contents" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na1-yr-DbW">
+                                                                    <rect key="frame" x="88" y="49" width="112" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -309,6 +321,9 @@
                                             <outlet property="cardView" destination="r70-XS-KhD" id="Q7f-t5-Ggh"/>
                                             <outlet property="cardprofileImg" destination="fLD-GZ-ys8" id="QkC-Ra-WWD"/>
                                             <outlet property="profileImgActivityIndicator" destination="qci-G8-vm5" id="JEy-qP-Ref"/>
+                                            <outlet property="replyContentsLabel" destination="na1-yr-DbW" id="iyj-Ms-4JR"/>
+                                            <outlet property="replyIDLabel" destination="MhA-wh-rBg" id="ibv-mD-nb5"/>
+                                            <outlet property="replyView" destination="uBv-VC-CZH" id="SJK-HM-o6e"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

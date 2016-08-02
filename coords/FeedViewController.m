@@ -96,16 +96,28 @@
     
  
     
+    // subView(replyIDlabal, replyContentsLabel) 초기화
+    for (UIView *tempView in cell.replyView.subviews){
+        [tempView removeFromSuperview];
+    }
+    
     // label 생성 test
-    UILabel *replyIDlabel1 = [[UILabel alloc]initWithFrame:CGRectMake(10, 30, 200, 25)];
-    replyIDlabel1.text = [[arrReplyTemp objectAtIndex:1]objectForKey:@"replyID"];
     
-    UILabel *replyContentsLabel1 = [[UILabel alloc]initWithFrame:CGRectMake(110, 30, 200, 25)];
-    replyContentsLabel1.text = [[arrReplyTemp objectAtIndex:1]objectForKey:@"replyText"];
-    
-    NSLog(@"cereaet label");
-    [cell.replyView addSubview:replyIDlabel1];
-    [cell.replyView addSubview:replyContentsLabel1];
+    for (int i=0; i<arrReplyTemp.count; i++) {
+        
+        NSLog(@"ddd== %@ count: %i",[arrReplyTemp objectAtIndex:i],i);
+        UILabel *replyIDlabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 25 + i*25, 60, 25)];
+        replyIDlabel.text = [[arrReplyTemp objectAtIndex:i]objectForKey:@"replyID"];
+        //        UILabel *replyIDlabel.text = [[arrReplyTemp objectAtIndex:1]objectForKey:@"replyID"];
+        
+        UILabel *replyContentsLabel = [[UILabel alloc]initWithFrame:CGRectMake(216, 30 + i*25, 100, 25)];
+        //        UILabel *replyContentsLabel[i].text = [[arrReplyTemp objectAtIndex:1]objectForKey:@"replyText"];
+        replyContentsLabel.text = [[arrReplyTemp objectAtIndex:i]objectForKey:@"replyText"];
+        NSLog(@"cereaet label");
+        [cell.replyView addSubview:replyIDlabel];
+        [cell.replyView addSubview:replyContentsLabel];
+        
+    }
     
     
     // dicTemp에 있는 데이터를 key로 선택하여 cell의 오브젝트에 꽂아줌

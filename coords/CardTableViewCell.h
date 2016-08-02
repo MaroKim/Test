@@ -20,8 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet UIView *cardView;
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *profileImgActivityIndicator;
-
 @property (weak, nonatomic) IBOutlet UIView *replyView;
 
 

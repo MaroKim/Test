@@ -186,7 +186,7 @@
         <!--Camera-->
         <scene sceneID="fqW-rn-Su9">
             <objects>
-                <viewController id="d6b-pc-LrY" sceneMemberID="viewController">
+                <viewController id="d6b-pc-LrY" customClass="CameraViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZP-lw-ora"/>
                         <viewControllerLayoutGuide type="bottom" id="Ptc-Y6-17S"/>
@@ -194,10 +194,32 @@
                     <view key="view" contentMode="scaleToFill" id="BWL-3W-VDk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTK-eC-RHj">
+                                <rect key="frame" x="221" y="85" width="52" height="30"/>
+                                <state key="normal" title="앨범선택"/>
+                                <connections>
+                                    <action selector="chooseExistingPhotoTapped:" destination="d6b-pc-LrY" eventType="touchUpInside" id="rQc-31-TA1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgu-12-B3i">
+                                <rect key="frame" x="44" y="175" width="299" height="284"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSP-BW-hI2">
+                                <rect key="frame" x="133" y="85" width="52" height="30"/>
+                                <state key="normal" title="다시촬영"/>
+                                <connections>
+                                    <action selector="takePhotoTapped:" destination="d6b-pc-LrY" eventType="touchUpInside" id="aiK-8i-h5U"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera" id="f9g-zS-yfJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="photoView" destination="sgu-12-B3i" id="IAY-HQ-QZt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ss-f3-zem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,7 +245,7 @@
                                         <rect key="frame" x="0.0" y="92" width="383" height="576"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tka-SL-PSy" id="r70-XS-KhD">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="576"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="575"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSR-TE-1Sg">

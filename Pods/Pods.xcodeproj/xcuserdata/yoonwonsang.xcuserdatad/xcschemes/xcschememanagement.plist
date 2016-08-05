@@ -19,20 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TGCameraViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>552F25D711AF583BDFAEA56FF49CE37D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>640D184C24A16B2881DB4A2DF3986227</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D833B05115154A9767527AF7CA34B02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AC36C435D20C7DD097BA4DD695AA6154</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D9A12F3E00630B5DEBD8DB2580D84FC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

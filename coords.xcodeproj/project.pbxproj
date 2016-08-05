@@ -17,6 +17,7 @@
 		7036707D1D47855D00B827D6 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7036707C1D47855D00B827D6 /* FeedViewController.m */; };
 		703670801D4788D800B827D6 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7036707F1D4788D800B827D6 /* test.jpg */; };
 		709BB7C71D48784800834D67 /* CardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BB7C61D48784800834D67 /* CardTableViewCell.m */; };
+		70AE9C981D54E220009686C8 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE9C971D54E220009686C8 /* CameraViewController.m */; };
 		70F4C9641D4BA7550057F0D1 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F4C9631D4BA7550057F0D1 /* ImageCache.m */; };
 		7EFAF6439E9E4CA73F382D45 /* libPods-coords.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C9260697C4CDEC11347A6A /* libPods-coords.a */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,8 @@
 		7036707F1D4788D800B827D6 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		709BB7C51D48784800834D67 /* CardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTableViewCell.h; sourceTree = "<group>"; };
 		709BB7C61D48784800834D67 /* CardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTableViewCell.m; sourceTree = "<group>"; };
+		70AE9C961D54E220009686C8 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		70AE9C971D54E220009686C8 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		70F4C9621D4BA7550057F0D1 /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
 		70F4C9631D4BA7550057F0D1 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
 		8912BF5BE0A625CB36E818E3 /* Pods-coords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coords.release.xcconfig"; path = "Pods/Target Support Files/Pods-coords/Pods-coords.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				70170E8A1D477FB2002DC016 /* SignViewController.h */,
 				70170E8B1D477FB2002DC016 /* SignViewController.m */,
 				70170E7C1D4778F5002DC016 /* Main.storyboard */,
+				70AE9C961D54E220009686C8 /* CameraViewController.h */,
+				70AE9C971D54E220009686C8 /* CameraViewController.m */,
 				7036707B1D47855D00B827D6 /* FeedViewController.h */,
 				7036707C1D47855D00B827D6 /* FeedViewController.m */,
 				70F4C9621D4BA7550057F0D1 /* ImageCache.h */,
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70170E7B1D4778F5002DC016 /* ViewController.m in Sources */,
+				70AE9C981D54E220009686C8 /* CameraViewController.m in Sources */,
 				709BB7C71D48784800834D67 /* CardTableViewCell.m in Sources */,
 				70170E781D4778F5002DC016 /* AppDelegate.m in Sources */,
 				70170E751D4778F5002DC016 /* main.m in Sources */,

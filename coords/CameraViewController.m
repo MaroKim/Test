@@ -17,9 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    TGCameraNavigationController *navigationController = [TGCameraNavigationController newWithCameraDelegate:self];
-    
-    [self presentViewController:navigationController animated:YES completion:nil];
 
 }
 

@@ -16,6 +16,7 @@
 		70170E8C1D477FB2002DC016 /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70170E8B1D477FB2002DC016 /* SignViewController.m */; };
 		7036707D1D47855D00B827D6 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7036707C1D47855D00B827D6 /* FeedViewController.m */; };
 		703670801D4788D800B827D6 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7036707F1D4788D800B827D6 /* test.jpg */; };
+		706AD2011D5B0A1600A0A665 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 706AD2001D5B0A1600A0A665 /* LoginViewController.m */; };
 		709BB7C71D48784800834D67 /* CardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 709BB7C61D48784800834D67 /* CardTableViewCell.m */; };
 		70AE9C981D54E220009686C8 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AE9C971D54E220009686C8 /* CameraViewController.m */; };
 		70F4C9641D4BA7550057F0D1 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F4C9631D4BA7550057F0D1 /* ImageCache.m */; };
@@ -39,6 +40,8 @@
 		7036707B1D47855D00B827D6 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		7036707C1D47855D00B827D6 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		7036707F1D4788D800B827D6 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		706AD1FF1D5B0A1600A0A665 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		706AD2001D5B0A1600A0A665 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		709BB7C51D48784800834D67 /* CardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTableViewCell.h; sourceTree = "<group>"; };
 		709BB7C61D48784800834D67 /* CardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTableViewCell.m; sourceTree = "<group>"; };
 		70AE9C961D54E220009686C8 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				70170E8A1D477FB2002DC016 /* SignViewController.h */,
 				70170E8B1D477FB2002DC016 /* SignViewController.m */,
 				70170E7C1D4778F5002DC016 /* Main.storyboard */,
+				706AD1FF1D5B0A1600A0A665 /* LoginViewController.h */,
+				706AD2001D5B0A1600A0A665 /* LoginViewController.m */,
 				70AE9C961D54E220009686C8 /* CameraViewController.h */,
 				70AE9C971D54E220009686C8 /* CameraViewController.m */,
 				7036707B1D47855D00B827D6 /* FeedViewController.h */,
@@ -173,6 +178,7 @@
 				TargetAttributes = {
 					70170E6F1D4778F5002DC016 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SZB864YF79;
 					};
 				};
 			};
@@ -266,6 +272,7 @@
 				709BB7C71D48784800834D67 /* CardTableViewCell.m in Sources */,
 				70170E781D4778F5002DC016 /* AppDelegate.m in Sources */,
 				70170E751D4778F5002DC016 /* main.m in Sources */,
+				706AD2011D5B0A1600A0A665 /* LoginViewController.m in Sources */,
 				7036707D1D47855D00B827D6 /* FeedViewController.m in Sources */,
 				70170E8C1D477FB2002DC016 /* SignViewController.m in Sources */,
 				70F4C9641D4BA7550057F0D1 /* ImageCache.m in Sources */,
@@ -383,10 +390,13 @@
 			baseConfigurationReference = 5DD3C455EDEE2560C9C2AD1C /* Pods-coords.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = coords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wonsang.coords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -395,10 +405,13 @@
 			baseConfigurationReference = 8912BF5BE0A625CB36E818E3 /* Pods-coords.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = coords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wonsang.coords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

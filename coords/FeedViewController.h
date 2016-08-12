@@ -19,7 +19,8 @@
     NSDictionary *testCard;
     NSMutableArray *commentsArray;
     
-    
+    NSString *userID;
 }
+@property (strong, nonatomic) NSString *userID;
 
 @end

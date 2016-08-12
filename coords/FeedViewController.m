@@ -19,6 +19,8 @@
  
 @implementation FeedViewController
 
+@synthesize userID;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSError *err;

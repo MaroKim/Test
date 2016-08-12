@@ -64,7 +64,7 @@
     
     
     // 요청할 url
-    NSString *url = @"http://localhost:3333/coords/login/";
+    NSString *url = @"http://wonsangyoon.cafe24.com:3333/coords/login/";
     // 파라미터
     NSDictionary *parameters = @{@"login_id": reqID, @"password": reqPassword};
      
